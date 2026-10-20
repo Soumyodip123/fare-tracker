@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-20T19:18:41+00:00",
+ "generated_at": "2026-10-20T23:54:29+00:00",
  "repo": "Soumyodip123/fare-tracker",
  "route": {
   "origin": "DEL",
@@ -35,7 +35,7 @@
   "type": "live search"
  },
  "latest": {
-  "at": "2026-10-20T19:18:39+00:00",
+  "at": "2026-10-20T23:54:23+00:00",
   "cheapest": 9061,
   "previous": 9061,
   "flights": [
@@ -132,19 +132,6 @@
    },
    {
     "airline": "Air India",
-    "flight_number": "AI 2553",
-    "dep_time": "2026-12-13 16:15",
-    "arr_time": "2026-12-13 18:25",
-    "stops": 0,
-    "duration_min": 130,
-    "baggage": "not listed",
-    "price": 12747,
-    "currency": "INR",
-    "link": "https://www.google.com/travel/flights?hl=en&gl=in&curr=INR&tfs=CBwQAhoeEgoyMDI2LTEyLTEzagcIARIDREVMcgcIARIDQ0NVQAFIAXABmAEC&tfu=EgIIAg",
-    "key": "AI2553|2026-12-13 16:15"
-   },
-   {
-    "airline": "Air India",
     "flight_number": "AI 2705",
     "dep_time": "2026-12-13 06:55",
     "arr_time": "2026-12-13 09:10",
@@ -155,6 +142,19 @@
     "currency": "INR",
     "link": "https://www.google.com/travel/flights?hl=en&gl=in&curr=INR&tfs=CBwQAhoeEgoyMDI2LTEyLTEzagcIARIDREVMcgcIARIDQ0NVQAFIAXABmAEC&tfu=EgIIAg",
     "key": "AI2705|2026-12-13 06:55"
+   },
+   {
+    "airline": "Air India",
+    "flight_number": "AI 2553",
+    "dep_time": "2026-12-13 16:15",
+    "arr_time": "2026-12-13 18:25",
+    "stops": 0,
+    "duration_min": 130,
+    "baggage": "not listed",
+    "price": 13713,
+    "currency": "INR",
+    "link": "https://www.google.com/travel/flights?hl=en&gl=in&curr=INR&tfs=CBwQAhoeEgoyMDI2LTEyLTEzagcIARIDREVMcgcIARIDQ0NVQAFIAXABmAEC&tfu=EgIIAg",
+    "key": "AI2553|2026-12-13 16:15"
    },
    {
     "airline": "Air India",
@@ -213,7 +213,7 @@
  "stats": {
   "lowest": 8903,
   "highest": 9206,
-  "observations": 4
+  "observations": 5
  },
  "series": [
   {
@@ -231,22 +231,33 @@
   {
    "t": "2026-10-20T19:18:39+00:00",
    "p": 9061
+  },
+  {
+   "t": "2026-10-20T23:54:23+00:00",
+   "p": 9061
   }
  ],
  "last_run": {
-  "at": "2026-10-20T19:18:39+00:00",
+  "at": "2026-10-20T23:54:23+00:00",
   "status": "ok",
   "message": "",
   "n_flights": 13,
   "cheapest": 9061
  },
- "last_success": "2026-10-20T19:18:39+00:00",
- "next_check_approx": "2026-10-20T22:18:39+00:00",
+ "last_success": "2026-10-20T23:54:23+00:00",
+ "next_check_approx": "2026-10-21T02:54:23+00:00",
  "quota": {
-  "used": 4,
+  "used": 5,
   "cap": 240
  },
  "runs": [
+  {
+   "at": "2026-10-20T23:54:23+00:00",
+   "status": "ok",
+   "message": "",
+   "n_flights": 13,
+   "cheapest": 9061
+  },
   {
    "at": "2026-10-20T19:18:39+00:00",
    "status": "ok",
