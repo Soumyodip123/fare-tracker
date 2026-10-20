@@ -23,7 +23,9 @@ class SerpApiProvider:
             "engine": "google_flights", "departure_id": r["origin"], "arrival_id": r["destination"],
             "outbound_date": r["date"], "type": 2 if r["trip_type"] == "one_way" else 1,
             "currency": r["currency"], "hl": "en", "gl": "in", "adults": r["passengers"],
-            "travel_class": CLASSES.get(r["travel_class"], 1), "api_key": key,
+            "travel_class": CLASSES.get(r["travel_class"], 1),
+            "sort_by": 2,
+            "api_key": key,
         }
         try:
             resp = requests.get(URL, params=params, timeout=60)
