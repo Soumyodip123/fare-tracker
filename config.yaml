@@ -1,0 +1,31 @@
+# Edit this file (GitHub app/Safari > config.yaml > pencil icon) to change what is tracked.
+route:
+  origin: DEL
+  destination: CCU
+  date: "2026-12-13"        # YYYY-MM-DD
+  trip_type: one_way
+  passengers: 1
+  travel_class: economy     # economy | premium_economy | business | first
+  currency: INR
+filters:
+  airlines: []              # e.g. ["IndiGo", "Air India"]; empty = all airlines
+  max_stops: null           # 0 = nonstop only; null = any
+provider: serpapi
+alerts:
+  target_price: 5500        # alert when cheapest matching fare <= this (0 disables)
+  min_change_abs: 300       # a move counts as significant at >= this many rupees...
+  min_change_pct: 5         # ...or >= this percent
+  notify_decrease: true
+  notify_increase: true
+  notify_target: true
+  notify_lowest: true
+  notify_recovery: true
+schedule:
+  expected_interval_hours: 3     # keep in sync with the cron line in .github/workflows/track.yml
+  monthly_search_cap: 240        # SerpAPI free plan = 250/month; cap leaves headroom
+  daily_summary_hour_ist: 21     # daily summary is sent on the first run after this hour (IST)
+channels:
+  email: true
+  telegram: false
+  whatsapp: false
+failure_alert_after: 3           # consecutive failed runs before one failure email

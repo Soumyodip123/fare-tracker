@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fare Tracker</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Fares">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#10233F">
+<style>
+:root{--bg:#EAF0F6;--ink:#10233F;--mute:#5B6B82;--paper:#fff;--line:#D3DDE9;--down:#0A7F5A;--up:#C0392B;--warn:#B7791F;--accent:#10233F;--onaccent:#EAF0F6}
+@media(prefers-color-scheme:dark){:root{--bg:#0B1524;--ink:#E6EEF8;--mute:#8FA2BC;--paper:#14243A;--line:#26384F;--down:#3DD6A0;--up:#FF7A6B;--warn:#E3B04B;--accent:#E6EEF8;--onaccent:#0B1524}}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.45 -apple-system,system-ui,"Segoe UI",sans-serif;-webkit-text-size-adjust:100%}
+body{padding:calc(env(safe-area-inset-top) + 14px) 16px calc(86px + env(safe-area-inset-bottom));max-width:560px;margin:0 auto}
+h1{font-size:14px;font-weight:600;line-height:1.3;margin:0;color:var(--mute)}
+.route{font-family:ui-serif,"New York",Georgia,serif;font-size:26px;font-weight:600;margin:2px 0 14px}
+.ticket{background:var(--paper);border-radius:18px;position:relative;padding:20px 20px 16px;margin-bottom:18px;
+  -webkit-mask:radial-gradient(circle 11px at 0 68%,#0000 98%,#000) left/51% 100% no-repeat,radial-gradient(circle 11px at 100% 68%,#0000 98%,#000) right/51% 100% no-repeat;
+  mask:radial-gradient(circle 11px at 0 68%,#0000 98%,#000) left/51% 100% no-repeat,radial-gradient(circle 11px at 100% 68%,#0000 98%,#000) right/51% 100% no-repeat}
+.fare{font-family:ui-serif,"New York",Georgia,serif;font-size:56px;line-height:1;font-weight:700;letter-spacing:-1px}
+.sub{color:var(--mute);font-size:14px}
+.perf{border-top:2px dashed var(--line);margin:16px -4px 12px}
+.chg{font-weight:650}.down{color:var(--down)}.up{color:var(--up)}.warn{color:var(--warn)}
+.row{display:flex;justify-content:space-between;gap:12px;padding:11px 0;border-bottom:1px solid var(--line)}
+.row:last-child{border:0}.row b{font-weight:600;text-align:right}
+h2{font-size:17px;margin:22px 0 6px}
+svg.chart{width:100%;height:auto;display:block}
+.tabs{position:fixed;left:0;right:0;bottom:0;display:flex;background:var(--paper);border-top:1px solid var(--line);padding:6px 6px calc(6px + env(safe-area-inset-bottom))}
+.tabs button{flex:1;background:none;border:0;color:var(--mute);font-family:inherit;font-size:12px;font-weight:600;padding:10px 2px;min-height:44px;border-radius:10px}
+.tabs button[aria-selected=true]{color:var(--onaccent);background:var(--accent)}
+.tabs button:focus-visible,a:focus-visible,.btn:focus-visible{outline:3px solid var(--warn);outline-offset:2px}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{text-align:left;padding:9px 8px;border-bottom:1px solid var(--line);white-space:nowrap}th{color:var(--mute);font-weight:600}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
+.btn{display:block;text-align:center;background:var(--accent);color:var(--onaccent);text-decoration:none;font-weight:650;padding:13px;border-radius:12px;margin:10px 0}
+.btn.alt{background:none;color:var(--ink);border:1.5px solid var(--line)}
+.pill{display:inline-block;font-size:12px;font-weight:650;padding:2px 8px;border-radius:99px;border:1px solid var(--line)}
+.note{color:var(--mute);font-size:13px}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<h1 id="src">Loading…</h1>
+<div class="route" id="route"></div>
+
+<section id="v-fare">
+  <div class="ticket">
+    <div class="sub">Cheapest fare right now</div>
+    <div class="fare" id="fare">–</div>
+    <div id="chg" class="chg" style="margin-top:6px"></div>
+    <div class="perf"></div>
+    <div class="sub" id="flightline"></div>
+  </div>
+  <svg class="chart" id="chart" viewBox="0 0 340 170" role="img" aria-label="Price history chart"></svg>
+  <div id="stats"></div>
+  <a class="btn" id="book" target="_blank" rel="noopener" hidden>Open flight search</a>
+  <p class="note">Fares can change before you book. Prices are observations from the data source, not booking offers.</p>
+</section>
+
+<section id="v-flights" hidden>
+  <h2>Flights in the latest check</h2><div class="scroll" id="flights"></div>
+</section>
+
+<section id="v-history" hidden>
+  <h2>Price history</h2><div class="scroll" id="history"></div>
+  <h2>Alerts sent</h2><div id="alerts" class="note"></div>
+</section>
+
+<section id="v-status" hidden>
+  <h2>Monitoring</h2><div id="status"></div>
+  <h2>Recent checks</h2><div class="scroll" id="runs"></div>
+</section>
+
+<section id="v-settings" hidden>
+  <h2>Current settings</h2><div id="settings"></div>
+  <a class="btn" id="edit" target="_blank" rel="noopener">Edit settings on GitHub</a>
+  <a class="btn alt" id="runnow" target="_blank" rel="noopener">Run a check now</a>
+  <p class="note">Settings live in <b>config.yaml</b>. This page never holds passwords or tokens, so changes are saved through GitHub's own editor (tap the pencil, change a value, then Commit). Notification credentials are stored as GitHub Secrets.</p>
+</section>
+
+<nav class="tabs" role="tablist" aria-label="Sections">
+  <button role="tab" data-v="fare" aria-selected="true">Fare</button>
+  <button role="tab" data-v="flights" aria-selected="false">Flights</button>
+  <button role="tab" data-v="history" aria-selected="false">History</button>
+  <button role="tab" data-v="status" aria-selected="false">Status</button>
+  <button role="tab" data-v="settings" aria-selected="false">Settings</button>
+</nav>
+
+<script>
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+let D=null;
+const cur=()=>D?.route?.currency||"INR";
+const m=n=>n==null?"–":new Intl.NumberFormat("en-IN",{style:"currency",currency:cur(),maximumFractionDigits:0}).format(n);
+const sm=n=>(n>0?"+":n<0?"−":"")+m(Math.abs(n));
+const when=t=>t?new Date(t).toLocaleString("en-IN",{timeZone:"Asia/Kolkata",day:"numeric",month:"short",hour:"numeric",minute:"2-digit"})+" IST":"–";
+const ST={ok:["Price recorded",""],error:["Source error","up"],no_results:["No results","warn"],no_matching:["No match for filters","warn"],quota_skipped:["Skipped: monthly cap","warn"]};
+
+function repoInfo(){
+  const q=new URLSearchParams(location.search).get("repo"); if(q) localStorage.setItem("repo",q);
+  const saved=localStorage.getItem("repo"); if(saved) return saved;
+  if(location.hostname.endsWith(".github.io")) return location.hostname.split(".")[0]+"/"+location.pathname.split("/")[1];
+  return "";
+}
+async function load(){
+  const repo=repoInfo(), urls=[];
+  if(repo) urls.push(`https://raw.githubusercontent.com/${repo}/main/data/data.json`);
+  urls.push("data.json");
+  for(const u of urls){ try{ const r=await fetch(u,{cache:"no-store"}); if(r.ok){ D=await r.json(); D._repo=repo||D.repo; return; } }catch(e){} }
+}
+function render(){
+  if(!D){ $("#src").textContent="No data yet"; $("#route").textContent="Waiting for the first check";
+    $("#flightline").textContent="Run the “track-fares” workflow once from GitHub (Actions tab). If this page is not on github.io, open it once with ?repo=YOUR_USER/YOUR_REPO."; return; }
+  const r=D.route, L=D.latest;
+  $("#src").textContent="Source: "+D.source.name+" · "+D.source.type;
+  $("#route").textContent=`${r.origin} → ${r.destination} · ${new Date(r.date+"T00:00").toLocaleDateString("en-IN",{day:"numeric",month:"short",year:"numeric"})}`;
+  if(L){
+    $("#fare").textContent=m(L.cheapest);
+    if(L.previous!=null){ const d=L.cheapest-L.previous, p=d/L.previous*100;
+      $("#chg").className="chg "+(d<0?"down":d>0?"up":""); $("#chg").textContent=d===0?"No change since the previous check":`${d<0?"▼":"▲"} ${sm(d)} (${p>0?"+":""}${p.toFixed(2)}%) vs previous ${m(L.previous)}`;
+    } else $("#chg").textContent="First observation recorded";
+    const f=L.flights[0]; if(f){ $("#flightline").textContent=`${f.airline} ${f.flight_number} · ${f.dep_time.slice(-5)} → ${f.arr_time.slice(-5)} · ${f.stops?f.stops+" stop(s)":"nonstop"} · checked ${when(L.at)}`;
+      if(f.link){ const b=$("#book"); b.href=f.link; b.hidden=false; } }
+  } else { $("#chg").textContent="No successful price check yet"; }
+  const s=D.stats, a=D.alerts_config, q=D.quota;
+  $("#stats").innerHTML=[["Lowest observed",m(s.lowest)],["Highest observed",m(s.highest)],["Target price",a.target_price?m(a.target_price):"not set"],["Last successful check",when(D.last_success)]]
+    .map(([k,v])=>`<div class="row"><span>${k}</span><b>${esc(v)}</b></div>`).join("");
+  chart();
+  $("#flights").innerHTML=L?`<table><tr><th>Airline</th><th>Flight</th><th>Dep</th><th>Arr</th><th>Stops</th><th>Baggage</th><th class="n">Fare</th></tr>`+
+    L.flights.map(f=>`<tr><td>${esc(f.airline)}</td><td>${esc(f.flight_number)}</td><td>${esc(f.dep_time.slice(-5))}</td><td>${esc(f.arr_time.slice(-5))}</td><td>${f.stops}</td><td>${esc(f.baggage)}</td><td class="n">${m(f.price)}</td></tr>`).join("")+`</table><p class="note">All rows are live results from the latest successful search.</p>`:`<p class="note">No flights recorded yet.</p>`;
+  const sr=[...D.series].reverse();
+  $("#history").innerHTML=sr.length?`<table><tr><th>Checked</th><th class="n">Cheapest</th><th class="n">Change</th></tr>`+sr.map((x,i)=>{const pv=sr[i+1]?.p,d=pv==null?null:x.p-pv;return `<tr><td>${when(x.t)}</td><td class="n">${m(x.p)}</td><td class="n ${d<0?"down":d>0?"up":""}">${d==null?"–":sm(d)}</td></tr>`}).join("")+`</table>`:`<p class="note">No history yet.</p>`;
+  $("#alerts").innerHTML=D.alerts.length?D.alerts.map(x=>`<div class="row"><span>${when(x.at)} · ${esc(x.kind)}</span><b>${m(x.price)}</b></div>`).join(""):"No alerts sent yet.";
+  const lr=D.last_run, hrs=D.expected_interval_hours, stale=lr&&(Date.now()-new Date(lr.at))>hrs*3.5*3600e3;
+  const mon=!lr?["Not started","warn"]:stale?["Possibly stalled — no run in "+Math.round((Date.now()-new Date(lr.at))/3600e3)+" h","up"]:lr.status==="ok"?["Running normally","down"]:[ST[lr.status]?.[0]||lr.status,ST[lr.status]?.[1]||"warn"];
+  $("#status").innerHTML=[["Monitoring",`<span class="${mon[1]}">${esc(mon[0])}</span>`],["Last check",when(lr?.at)],["Last successful check",when(D.last_success)],["Next check (approx.)",when(D.next_check_approx)],
+    ["Data source",esc(D.source.name)],["Searches used this month",`${q.used} of ${q.cap}`],["Data updated",when(D.generated_at)]].map(([k,v])=>`<div class="row"><span>${k}</span><b>${v}</b></div>`).join("")+
+    (lr&&lr.status!=="ok"?`<p class="note">Latest problem: ${esc(lr.message||ST[lr.status]?.[0])}</p>`:"");
+  $("#runs").innerHTML=`<table><tr><th>When</th><th>Result</th><th class="n">Fare</th></tr>`+D.runs.slice(0,30).map(x=>`<tr><td>${when(x.at)}</td><td class="${ST[x.status]?.[1]||""}">${esc(ST[x.status]?.[0]||x.status)}</td><td class="n">${x.cheapest==null?"–":m(x.cheapest)}</td></tr>`).join("")+`</table>`;
+  const ch=D.channels, f=D.filters;
+  $("#settings").innerHTML=[["Route",`${r.origin} → ${r.destination}`],["Date",r.date],["Passengers",r.passengers],["Cabin",r.travel_class],["Airlines",f.airlines?.length?f.airlines.join(", "):"any"],["Max stops",f.max_stops??"any"],
+    ["Target price",a.target_price?m(a.target_price):"not set"],["Significant change",`${m(a.min_change_abs)} or ${a.min_change_pct}%`],["Check every",`about ${hrs} h`],
+    ["Email",ch.email?"on":"off"],["Telegram",ch.telegram?"on":"off"],["WhatsApp",ch.whatsapp?"on":"off"]].map(([k,v])=>`<div class="row"><span>${k}</span><b>${esc(v)}</b></div>`).join("");
+  const repo=D._repo; $("#edit").href=repo?`https://github.com/${repo}/edit/main/config.yaml`:"https://github.com"; $("#runnow").href=repo?`https://github.com/${repo}/actions/workflows/track.yml`:"https://github.com";
+}
+function chart(){
+  const s=D.series, svg=$("#chart"); if(s.length<2){ svg.innerHTML=`<text x="170" y="85" text-anchor="middle" fill="currentColor" opacity=".6" font-size="13">The chart appears after two successful checks</text>`; return; }
+  const W=340,H=170,P={l:8,r:8,t:14,b:22}, tg=D.alerts_config.target_price||null;
+  const ps=s.map(x=>x.p).concat(tg?[tg]:[]), lo=Math.min(...ps), hi=Math.max(...ps), span=(hi-lo)||1;
+  const t0=new Date(s[0].t).getTime(), t1=new Date(s[s.length-1].t).getTime()||t0+1;
+  const X=t=>P.l+(new Date(t).getTime()-t0)/((t1-t0)||1)*(W-P.l-P.r), Y=v=>P.t+(1-(v-lo)/span)*(H-P.t-P.b);
+  const pts=s.map(x=>`${X(x.t).toFixed(1)},${Y(x.p).toFixed(1)}`).join(" "), last=s[s.length-1];
+  svg.innerHTML=(tg?`<line x1="${P.l}" x2="${W-P.r}" y1="${Y(tg)}" y2="${Y(tg)}" stroke="var(--warn)" stroke-dasharray="4 4"/><text x="${P.l}" y="${Y(tg)-4}" font-size="10" fill="var(--warn)">target ${m(tg)}</text>`:"")+
+   `<polyline points="${pts}" fill="none" stroke="var(--ink)" stroke-width="2" stroke-linejoin="round"/><circle cx="${X(last.t)}" cy="${Y(last.p)}" r="4" fill="var(--ink)"/>`+
+   `<text x="${P.l}" y="${H-6}" font-size="10" fill="var(--mute)">${m(lo)} low</text><text x="${W-P.r}" y="${H-6}" text-anchor="end" font-size="10" fill="var(--mute)">${m(hi)} high</text>`;
+}
+document.querySelectorAll(".tabs button").forEach(b=>b.onclick=()=>{
+  document.querySelectorAll(".tabs button").forEach(x=>x.setAttribute("aria-selected",x===b));
+  ["fare","flights","history","status","settings"].forEach(v=>$("#v-"+v).hidden=v!==b.dataset.v); scrollTo(0,0);
+});
+if("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});
+load().then(render);
+document.addEventListener("visibilitychange",()=>{ if(!document.hidden) load().then(render); });
+</script>
+</body>
+</html>

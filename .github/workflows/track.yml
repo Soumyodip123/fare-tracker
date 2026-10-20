@@ -1,0 +1,43 @@
+name: track-fares
+on:
+  schedule:
+    - cron: "17 */3 * * *"      # every 3 hours at :17 (off the congested top of the hour). Keep config.yaml in sync.
+  workflow_dispatch:             # lets you press "Run workflow" from the iPhone to check right now
+permissions:
+  contents: write                # needed to commit the updated database back to the repo
+concurrency:
+  group: tracker
+  cancel-in-progress: false
+jobs:
+  track:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Check fares and send alerts
+        run: python -m tracker.run
+        env:
+          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          WHATSAPP_TOKEN: ${{ secrets.WHATSAPP_TOKEN }}
+          WHATSAPP_PHONE_ID: ${{ secrets.WHATSAPP_PHONE_ID }}
+          WHATSAPP_TO: ${{ secrets.WHATSAPP_TO }}
+          WHATSAPP_TEMPLATE: ${{ secrets.WHATSAPP_TEMPLATE }}
+      - name: Save history back to the repo
+        run: |
+          git config user.name "fare-tracker-bot"
+          git config user.email "fare-tracker-bot@users.noreply.github.com"
+          git add data docs/data.json
+          if git diff --cached --quiet; then echo "nothing to commit"; exit 0; fi
+          git commit -m "data: update fares"
+          git pull --rebase
+          git push
