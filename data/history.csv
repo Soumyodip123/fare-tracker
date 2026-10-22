@@ -130,3 +130,16 @@ observed_at,route_key,provider,source_type,airline,flight_number,dep_time,arr_ti
 2026-10-22T04:51:22+00:00,DEL-CCU-2026-12-13-1pax-economy-one_way,serpapi,live,Air India,AI 2767,2026-12-13 13:00,2026-12-13 15:10,0,130,not listed,14479,INR
 2026-10-22T04:51:22+00:00,DEL-CCU-2026-12-13-1pax-economy-one_way,serpapi,live,Air India,AI 2707,2026-12-13 18:10,2026-12-13 20:15,0,125,not listed,22312,INR
 2026-10-22T04:51:22+00:00,DEL-CCU-2026-12-13-1pax-economy-one_way,serpapi,live,Air India,AI 2709,2026-12-13 19:40,2026-12-13 21:45,0,125,not listed,22312,INR
+2026-10-22T11:56:28+00:00,DEL-CCU-2026-12-13-1pax-economy-one_way,serpapi,live,Air India Express,IX 1197,2026-12-13 20:50,2026-12-13 23:05,0,135,not listed,9063,INR
+2026-10-22T11:56:28+00:00,DEL-CCU-2026-12-13-1pax-economy-one_way,serpapi,live,Akasa Air,QP 1260,2026-12-13 20:55,2026-12-13 23:25,0,150,not listed,9503,INR
+2026-10-22T11:56:28+00:00,DEL-CCU-2026-12-13-1pax-economy-one_way,serpapi,live,SpiceJet,SG 263,2026-12-13 07:00,2026-12-13 09:25,0,145,not listed,9522,INR
+2026-10-22T11:56:28+00:00,DEL-CCU-2026-12-13-1pax-economy-one_way,serpapi,live,Akasa Air,QP 1258,2026-12-13 08:50,2026-12-13 11:10,0,140,not listed,9813,INR
+2026-10-22T11:56:28+00:00,DEL-CCU-2026-12-13-1pax-economy-one_way,serpapi,live,IndiGo,6E 821+6E 775,2026-12-13 13:25,2026-12-13 17:10,1,225,not listed,10435,INR
+2026-10-22T11:56:28+00:00,DEL-CCU-2026-12-13-1pax-economy-one_way,serpapi,live,Air India,AI 2501,2026-12-13 11:40,2026-12-13 13:50,0,130,not listed,11009,INR
+2026-10-22T11:56:28+00:00,DEL-CCU-2026-12-13-1pax-economy-one_way,serpapi,live,Air India,AI 2727,2026-12-13 21:40,2026-12-13 23:50,0,130,not listed,11203,INR
+2026-10-22T11:56:28+00:00,DEL-CCU-2026-12-13-1pax-economy-one_way,serpapi,live,Air India,AI 2705,2026-12-13 06:55,2026-12-13 09:10,0,135,not listed,13471,INR
+2026-10-22T11:56:28+00:00,DEL-CCU-2026-12-13-1pax-economy-one_way,serpapi,live,Air India,AI 2553,2026-12-13 16:15,2026-12-13 18:25,0,130,not listed,13713,INR
+2026-10-22T11:56:28+00:00,DEL-CCU-2026-12-13-1pax-economy-one_way,serpapi,live,Air India,AI 2597,2026-12-13 09:30,2026-12-13 11:45,0,135,not listed,14479,INR
+2026-10-22T11:56:28+00:00,DEL-CCU-2026-12-13-1pax-economy-one_way,serpapi,live,Air India,AI 2767,2026-12-13 13:00,2026-12-13 15:10,0,130,not listed,14479,INR
+2026-10-22T11:56:28+00:00,DEL-CCU-2026-12-13-1pax-economy-one_way,serpapi,live,Air India,AI 2707,2026-12-13 18:10,2026-12-13 20:15,0,125,not listed,22312,INR
+2026-10-22T11:56:28+00:00,DEL-CCU-2026-12-13-1pax-economy-one_way,serpapi,live,Air India,AI 2709,2026-12-13 19:40,2026-12-13 21:45,0,125,not listed,22312,INR
