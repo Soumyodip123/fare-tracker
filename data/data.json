@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T04:40:02+00:00",
+ "generated_at": "2026-10-24T11:04:51+00:00",
  "repo": "Soumyodip123/fare-tracker",
  "route": {
   "origin": "DEL",
@@ -35,7 +35,7 @@
   "type": "live search"
  },
  "latest": {
-  "at": "2026-10-24T04:39:59+00:00",
+  "at": "2026-10-24T11:04:43+00:00",
   "cheapest": 8962,
   "previous": 8962,
   "flights": [
@@ -106,19 +106,6 @@
    },
    {
     "airline": "IndiGo",
-    "flight_number": "6E 897",
-    "dep_time": "2026-12-13 12:20",
-    "arr_time": "2026-12-13 14:25",
-    "stops": 0,
-    "duration_min": 125,
-    "baggage": "not listed",
-    "price": 8962,
-    "currency": "INR",
-    "link": "https://www.google.com/travel/flights?hl=en&gl=in&curr=INR&tfs=CBwQAhoeEgoyMDI2LTEyLTEzagcIARIDREVMcgcIARIDQ0NVQAFIAXABmAEC&tfu=EgIIAg",
-    "key": "6E897|2026-12-13 12:20"
-   },
-   {
-    "airline": "IndiGo",
     "flight_number": "6E 389",
     "dep_time": "2026-12-13 22:15",
     "arr_time": "2026-12-14 00:25",
@@ -142,6 +129,32 @@
     "currency": "INR",
     "link": "https://www.google.com/travel/flights?hl=en&gl=in&curr=INR&tfs=CBwQAhoeEgoyMDI2LTEyLTEzagcIARIDREVMcgcIARIDQ0NVQAFIAXABmAEC&tfu=EgIIAg",
     "key": "6E247|2026-12-13 23:45"
+   },
+   {
+    "airline": "Air India Express",
+    "flight_number": "IX 1197",
+    "dep_time": "2026-12-13 20:50",
+    "arr_time": "2026-12-13 23:05",
+    "stops": 0,
+    "duration_min": 135,
+    "baggage": "not listed",
+    "price": 9063,
+    "currency": "INR",
+    "link": "https://www.google.com/travel/flights?hl=en&gl=in&curr=INR&tfs=CBwQAhoeEgoyMDI2LTEyLTEzagcIARIDREVMcgcIARIDQ0NVQAFIAXABmAEC&tfu=EgIIAg",
+    "key": "IX1197|2026-12-13 20:50"
+   },
+   {
+    "airline": "IndiGo",
+    "flight_number": "6E 897",
+    "dep_time": "2026-12-13 12:20",
+    "arr_time": "2026-12-13 14:25",
+    "stops": 0,
+    "duration_min": 125,
+    "baggage": "not listed",
+    "price": 9224,
+    "currency": "INR",
+    "link": "https://www.google.com/travel/flights?hl=en&gl=in&curr=INR&tfs=CBwQAhoeEgoyMDI2LTEyLTEzagcIARIDREVMcgcIARIDQ0NVQAFIAXABmAEC&tfu=EgIIAg",
+    "key": "6E897|2026-12-13 12:20"
    },
    {
     "airline": "SpiceJet",
@@ -343,7 +356,7 @@
  "stats": {
   "lowest": 8903,
   "highest": 9503,
-  "observations": 18
+  "observations": 19
  },
  "series": [
   {
@@ -417,22 +430,33 @@
   {
    "t": "2026-10-24T04:39:59+00:00",
    "p": 8962
+  },
+  {
+   "t": "2026-10-24T11:04:43+00:00",
+   "p": 8962
   }
  ],
  "last_run": {
-  "at": "2026-10-24T04:39:59+00:00",
+  "at": "2026-10-24T11:04:43+00:00",
   "status": "ok",
   "message": "",
-  "n_flights": 23,
+  "n_flights": 24,
   "cheapest": 8962
  },
- "last_success": "2026-10-24T04:39:59+00:00",
- "next_check_approx": "2026-10-24T07:39:59+00:00",
+ "last_success": "2026-10-24T11:04:43+00:00",
+ "next_check_approx": "2026-10-24T14:04:43+00:00",
  "quota": {
-  "used": 18,
+  "used": 19,
   "cap": 240
  },
  "runs": [
+  {
+   "at": "2026-10-24T11:04:43+00:00",
+   "status": "ok",
+   "message": "",
+   "n_flights": 24,
+   "cheapest": 8962
+  },
   {
    "at": "2026-10-24T04:39:59+00:00",
    "status": "ok",
