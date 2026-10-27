@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-26T20:30:45+00:00",
+ "generated_at": "2026-10-27T00:27:41+00:00",
  "repo": "Soumyodip123/fare-tracker",
  "route": {
   "origin": "DEL",
@@ -35,7 +35,7 @@
   "type": "live search"
  },
  "latest": {
-  "at": "2026-10-26T20:30:43+00:00",
+  "at": "2026-10-27T00:27:34+00:00",
   "cheapest": 8962,
   "previous": 8962,
   "flights": [
@@ -356,7 +356,7 @@
  "stats": {
   "lowest": 8903,
   "highest": 9503,
-  "observations": 31
+  "observations": 32
  },
  "series": [
   {
@@ -482,22 +482,33 @@
   {
    "t": "2026-10-26T20:30:43+00:00",
    "p": 8962
+  },
+  {
+   "t": "2026-10-27T00:27:34+00:00",
+   "p": 8962
   }
  ],
  "last_run": {
-  "at": "2026-10-26T20:30:43+00:00",
+  "at": "2026-10-27T00:27:34+00:00",
   "status": "ok",
   "message": "",
   "n_flights": 24,
   "cheapest": 8962
  },
- "last_success": "2026-10-26T20:30:43+00:00",
- "next_check_approx": "2026-10-26T23:30:43+00:00",
+ "last_success": "2026-10-27T00:27:34+00:00",
+ "next_check_approx": "2026-10-27T03:27:34+00:00",
  "quota": {
-  "used": 31,
+  "used": 32,
   "cap": 240
  },
  "runs": [
+  {
+   "at": "2026-10-27T00:27:34+00:00",
+   "status": "ok",
+   "message": "",
+   "n_flights": 24,
+   "cheapest": 8962
+  },
   {
    "at": "2026-10-26T20:30:43+00:00",
    "status": "ok",
