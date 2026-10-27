@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-27T09:02:38+00:00",
+ "generated_at": "2026-10-27T15:22:59+00:00",
  "repo": "Soumyodip123/fare-tracker",
  "route": {
   "origin": "DEL",
@@ -35,7 +35,7 @@
   "type": "live search"
  },
  "latest": {
-  "at": "2026-10-27T09:02:36+00:00",
+  "at": "2026-10-27T15:22:57+00:00",
   "cheapest": 8962,
   "previous": 8962,
   "flights": [
@@ -144,6 +144,19 @@
     "key": "6E894|2026-12-13 10:30"
    },
    {
+    "airline": "SpiceJet",
+    "flight_number": "SG 263",
+    "dep_time": "2026-12-13 07:00",
+    "arr_time": "2026-12-13 09:25",
+    "stops": 0,
+    "duration_min": 145,
+    "baggage": "not listed",
+    "price": 9522,
+    "currency": "INR",
+    "link": "https://www.google.com/travel/flights?hl=en&gl=in&curr=INR&tfs=CBwQAhoeEgoyMDI2LTEyLTEzagcIARIDREVMcgcIARIDQ0NVQAFIAXABmAEC&tfu=EgIIAg",
+    "key": "SG263|2026-12-13 07:00"
+   },
+   {
     "airline": "IndiGo",
     "flight_number": "6E 897",
     "dep_time": "2026-12-13 12:20",
@@ -168,19 +181,6 @@
     "currency": "INR",
     "link": "https://www.google.com/travel/flights?hl=en&gl=in&curr=INR&tfs=CBwQAhoeEgoyMDI2LTEyLTEzagcIARIDREVMcgcIARIDQ0NVQAFIAXABmAEC&tfu=EgIIAg",
     "key": "QP1258|2026-12-13 08:50"
-   },
-   {
-    "airline": "SpiceJet",
-    "flight_number": "SG 263",
-    "dep_time": "2026-12-13 07:00",
-    "arr_time": "2026-12-13 09:25",
-    "stops": 0,
-    "duration_min": 145,
-    "baggage": "not listed",
-    "price": 10420,
-    "currency": "INR",
-    "link": "https://www.google.com/travel/flights?hl=en&gl=in&curr=INR&tfs=CBwQAhoeEgoyMDI2LTEyLTEzagcIARIDREVMcgcIARIDQ0NVQAFIAXABmAEC&tfu=EgIIAg",
-    "key": "SG263|2026-12-13 07:00"
    },
    {
     "airline": "IndiGo",
@@ -236,16 +236,16 @@
    },
    {
     "airline": "Air India",
-    "flight_number": "AI 2727",
-    "dep_time": "2026-12-13 21:40",
-    "arr_time": "2026-12-13 23:50",
+    "flight_number": "AI 2501",
+    "dep_time": "2026-12-13 11:40",
+    "arr_time": "2026-12-13 13:50",
     "stops": 0,
     "duration_min": 130,
     "baggage": "not listed",
-    "price": 11203,
+    "price": 12075,
     "currency": "INR",
     "link": "https://www.google.com/travel/flights?hl=en&gl=in&curr=INR&tfs=CBwQAhoeEgoyMDI2LTEyLTEzagcIARIDREVMcgcIARIDQ0NVQAFIAXABmAEC&tfu=EgIIAg",
-    "key": "AI2727|2026-12-13 21:40"
+    "key": "AI2501|2026-12-13 11:40"
    },
    {
     "airline": "Air India",
@@ -255,10 +255,23 @@
     "stops": 0,
     "duration_min": 125,
     "baggage": "not listed",
-    "price": 11298,
+    "price": 12075,
     "currency": "INR",
     "link": "https://www.google.com/travel/flights?hl=en&gl=in&curr=INR&tfs=CBwQAhoeEgoyMDI2LTEyLTEzagcIARIDREVMcgcIARIDQ0NVQAFIAXABmAEC&tfu=EgIIAg",
     "key": "AI2709|2026-12-13 19:40"
+   },
+   {
+    "airline": "Air India",
+    "flight_number": "AI 2727",
+    "dep_time": "2026-12-13 21:40",
+    "arr_time": "2026-12-13 23:50",
+    "stops": 0,
+    "duration_min": 130,
+    "baggage": "not listed",
+    "price": 12075,
+    "currency": "INR",
+    "link": "https://www.google.com/travel/flights?hl=en&gl=in&curr=INR&tfs=CBwQAhoeEgoyMDI2LTEyLTEzagcIARIDREVMcgcIARIDQ0NVQAFIAXABmAEC&tfu=EgIIAg",
+    "key": "AI2727|2026-12-13 21:40"
    },
    {
     "airline": "Air India",
@@ -268,36 +281,10 @@
     "stops": 0,
     "duration_min": 125,
     "baggage": "not listed",
-    "price": 11744,
+    "price": 12878,
     "currency": "INR",
     "link": "https://www.google.com/travel/flights?hl=en&gl=in&curr=INR&tfs=CBwQAhoeEgoyMDI2LTEyLTEzagcIARIDREVMcgcIARIDQ0NVQAFIAXABmAEC&tfu=EgIIAg",
     "key": "AI2707|2026-12-13 18:10"
-   },
-   {
-    "airline": "Air India",
-    "flight_number": "AI 2553",
-    "dep_time": "2026-12-13 16:15",
-    "arr_time": "2026-12-13 18:25",
-    "stops": 0,
-    "duration_min": 130,
-    "baggage": "not listed",
-    "price": 12747,
-    "currency": "INR",
-    "link": "https://www.google.com/travel/flights?hl=en&gl=in&curr=INR&tfs=CBwQAhoeEgoyMDI2LTEyLTEzagcIARIDREVMcgcIARIDQ0NVQAFIAXABmAEC&tfu=EgIIAg",
-    "key": "AI2553|2026-12-13 16:15"
-   },
-   {
-    "airline": "Air India",
-    "flight_number": "AI 2501",
-    "dep_time": "2026-12-13 11:40",
-    "arr_time": "2026-12-13 13:50",
-    "stops": 0,
-    "duration_min": 130,
-    "baggage": "not listed",
-    "price": 13471,
-    "currency": "INR",
-    "link": "https://www.google.com/travel/flights?hl=en&gl=in&curr=INR&tfs=CBwQAhoeEgoyMDI2LTEyLTEzagcIARIDREVMcgcIARIDQ0NVQAFIAXABmAEC&tfu=EgIIAg",
-    "key": "AI2501|2026-12-13 11:40"
    },
    {
     "airline": "IndiGo",
@@ -314,13 +301,26 @@
    },
    {
     "airline": "Air India",
+    "flight_number": "AI 2553",
+    "dep_time": "2026-12-13 16:15",
+    "arr_time": "2026-12-13 18:25",
+    "stops": 0,
+    "duration_min": 130,
+    "baggage": "not listed",
+    "price": 13739,
+    "currency": "INR",
+    "link": "https://www.google.com/travel/flights?hl=en&gl=in&curr=INR&tfs=CBwQAhoeEgoyMDI2LTEyLTEzagcIARIDREVMcgcIARIDQ0NVQAFIAXABmAEC&tfu=EgIIAg",
+    "key": "AI2553|2026-12-13 16:15"
+   },
+   {
+    "airline": "Air India",
     "flight_number": "AI 2705",
     "dep_time": "2026-12-13 06:55",
     "arr_time": "2026-12-13 09:10",
     "stops": 0,
     "duration_min": 135,
     "baggage": "not listed",
-    "price": 14479,
+    "price": 15892,
     "currency": "INR",
     "link": "https://www.google.com/travel/flights?hl=en&gl=in&curr=INR&tfs=CBwQAhoeEgoyMDI2LTEyLTEzagcIARIDREVMcgcIARIDQ0NVQAFIAXABmAEC&tfu=EgIIAg",
     "key": "AI2705|2026-12-13 06:55"
@@ -333,7 +333,7 @@
     "stops": 0,
     "duration_min": 135,
     "baggage": "not listed",
-    "price": 14479,
+    "price": 15892,
     "currency": "INR",
     "link": "https://www.google.com/travel/flights?hl=en&gl=in&curr=INR&tfs=CBwQAhoeEgoyMDI2LTEyLTEzagcIARIDREVMcgcIARIDQ0NVQAFIAXABmAEC&tfu=EgIIAg",
     "key": "AI2597|2026-12-13 09:30"
@@ -346,7 +346,7 @@
     "stops": 0,
     "duration_min": 130,
     "baggage": "not listed",
-    "price": 14479,
+    "price": 15892,
     "currency": "INR",
     "link": "https://www.google.com/travel/flights?hl=en&gl=in&curr=INR&tfs=CBwQAhoeEgoyMDI2LTEyLTEzagcIARIDREVMcgcIARIDQ0NVQAFIAXABmAEC&tfu=EgIIAg",
     "key": "AI2767|2026-12-13 13:00"
@@ -356,7 +356,7 @@
  "stats": {
   "lowest": 8903,
   "highest": 9503,
-  "observations": 33
+  "observations": 34
  },
  "series": [
   {
@@ -490,22 +490,33 @@
   {
    "t": "2026-10-27T09:02:36+00:00",
    "p": 8962
+  },
+  {
+   "t": "2026-10-27T15:22:57+00:00",
+   "p": 8962
   }
  ],
  "last_run": {
-  "at": "2026-10-27T09:02:36+00:00",
+  "at": "2026-10-27T15:22:57+00:00",
   "status": "ok",
   "message": "",
   "n_flights": 24,
   "cheapest": 8962
  },
- "last_success": "2026-10-27T09:02:36+00:00",
- "next_check_approx": "2026-10-27T12:02:36+00:00",
+ "last_success": "2026-10-27T15:22:57+00:00",
+ "next_check_approx": "2026-10-27T18:22:57+00:00",
  "quota": {
-  "used": 33,
+  "used": 34,
   "cap": 240
  },
  "runs": [
+  {
+   "at": "2026-10-27T15:22:57+00:00",
+   "status": "ok",
+   "message": "",
+   "n_flights": 24,
+   "cheapest": 8962
+  },
   {
    "at": "2026-10-27T09:02:36+00:00",
    "status": "ok",
