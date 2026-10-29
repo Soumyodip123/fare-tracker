@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T00:59:53+00:00",
+ "generated_at": "2026-10-29T10:01:19+00:00",
  "repo": "Soumyodip123/fare-tracker",
  "route": {
   "origin": "DEL",
@@ -35,127 +35,10 @@
   "type": "live search"
  },
  "latest": {
-  "at": "2026-10-29T00:59:47+00:00",
-  "cheapest": 8962,
+  "at": "2026-10-29T10:01:17+00:00",
+  "cheapest": 9522,
   "previous": 8962,
   "flights": [
-   {
-    "airline": "IndiGo",
-    "flight_number": "6E 930",
-    "dep_time": "2026-12-13 03:00",
-    "arr_time": "2026-12-13 05:10",
-    "stops": 0,
-    "duration_min": 130,
-    "baggage": "not listed",
-    "price": 8962,
-    "currency": "INR",
-    "link": "https://www.google.com/travel/flights?hl=en&gl=in&curr=INR&tfs=CBwQAhoeEgoyMDI2LTEyLTEzagcIARIDREVMcgcIARIDQ0NVQAFIAXABmAEC&tfu=EgIIAg",
-    "key": "6E930|2026-12-13 03:00"
-   },
-   {
-    "airline": "IndiGo",
-    "flight_number": "6E 340",
-    "dep_time": "2026-12-13 06:15",
-    "arr_time": "2026-12-13 08:25",
-    "stops": 0,
-    "duration_min": 130,
-    "baggage": "not listed",
-    "price": 8962,
-    "currency": "INR",
-    "link": "https://www.google.com/travel/flights?hl=en&gl=in&curr=INR&tfs=CBwQAhoeEgoyMDI2LTEyLTEzagcIARIDREVMcgcIARIDQ0NVQAFIAXABmAEC&tfu=EgIIAg",
-    "key": "6E340|2026-12-13 06:15"
-   },
-   {
-    "airline": "IndiGo",
-    "flight_number": "6E 2192",
-    "dep_time": "2026-12-13 08:30",
-    "arr_time": "2026-12-13 10:40",
-    "stops": 0,
-    "duration_min": 130,
-    "baggage": "not listed",
-    "price": 8962,
-    "currency": "INR",
-    "link": "https://www.google.com/travel/flights?hl=en&gl=in&curr=INR&tfs=CBwQAhoeEgoyMDI2LTEyLTEzagcIARIDREVMcgcIARIDQ0NVQAFIAXABmAEC&tfu=EgIIAg",
-    "key": "6E2192|2026-12-13 08:30"
-   },
-   {
-    "airline": "IndiGo",
-    "flight_number": "6E 389",
-    "dep_time": "2026-12-13 22:15",
-    "arr_time": "2026-12-14 00:25",
-    "stops": 0,
-    "duration_min": 130,
-    "baggage": "not listed",
-    "price": 8962,
-    "currency": "INR",
-    "link": "https://www.google.com/travel/flights?hl=en&gl=in&curr=INR&tfs=CBwQAhoeEgoyMDI2LTEyLTEzagcIARIDREVMcgcIARIDQ0NVQAFIAXABmAEC&tfu=EgIIAg",
-    "key": "6E389|2026-12-13 22:15"
-   },
-   {
-    "airline": "IndiGo",
-    "flight_number": "6E 247",
-    "dep_time": "2026-12-13 23:45",
-    "arr_time": "2026-12-14 01:55",
-    "stops": 0,
-    "duration_min": 130,
-    "baggage": "not listed",
-    "price": 8962,
-    "currency": "INR",
-    "link": "https://www.google.com/travel/flights?hl=en&gl=in&curr=INR&tfs=CBwQAhoeEgoyMDI2LTEyLTEzagcIARIDREVMcgcIARIDQ0NVQAFIAXABmAEC&tfu=EgIIAg",
-    "key": "6E247|2026-12-13 23:45"
-   },
-   {
-    "airline": "IndiGo",
-    "flight_number": "6E 5191",
-    "dep_time": "2026-12-13 04:45",
-    "arr_time": "2026-12-13 06:55",
-    "stops": 0,
-    "duration_min": 130,
-    "baggage": "not listed",
-    "price": 9224,
-    "currency": "INR",
-    "link": "https://www.google.com/travel/flights?hl=en&gl=in&curr=INR&tfs=CBwQAhoeEgoyMDI2LTEyLTEzagcIARIDREVMcgcIARIDQ0NVQAFIAXABmAEC&tfu=EgIIAg",
-    "key": "6E5191|2026-12-13 04:45"
-   },
-   {
-    "airline": "IndiGo",
-    "flight_number": "6E 894",
-    "dep_time": "2026-12-13 10:30",
-    "arr_time": "2026-12-13 12:40",
-    "stops": 0,
-    "duration_min": 130,
-    "baggage": "not listed",
-    "price": 9224,
-    "currency": "INR",
-    "link": "https://www.google.com/travel/flights?hl=en&gl=in&curr=INR&tfs=CBwQAhoeEgoyMDI2LTEyLTEzagcIARIDREVMcgcIARIDQ0NVQAFIAXABmAEC&tfu=EgIIAg",
-    "key": "6E894|2026-12-13 10:30"
-   },
-   {
-    "airline": "Air India Express",
-    "flight_number": "IX 1067+IX 1259",
-    "dep_time": "2026-12-13 11:25",
-    "arr_time": "2026-12-13 16:00",
-    "stops": 1,
-    "duration_min": 275,
-    "baggage": "not listed",
-    "price": 9395,
-    "currency": "INR",
-    "link": "https://www.google.com/travel/flights?hl=en&gl=in&curr=INR&tfs=CBwQAhoeEgoyMDI2LTEyLTEzagcIARIDREVMcgcIARIDQ0NVQAFIAXABmAEC&tfu=EgIIAg",
-    "key": "IX1067+IX1259|2026-12-13 11:25"
-   },
-   {
-    "airline": "Akasa Air",
-    "flight_number": "QP 1260",
-    "dep_time": "2026-12-13 20:55",
-    "arr_time": "2026-12-13 23:25",
-    "stops": 0,
-    "duration_min": 150,
-    "baggage": "not listed",
-    "price": 9503,
-    "currency": "INR",
-    "link": "https://www.google.com/travel/flights?hl=en&gl=in&curr=INR&tfs=CBwQAhoeEgoyMDI2LTEyLTEzagcIARIDREVMcgcIARIDQ0NVQAFIAXABmAEC&tfu=EgIIAg",
-    "key": "QP1260|2026-12-13 20:55"
-   },
    {
     "airline": "SpiceJet",
     "flight_number": "SG 263",
@@ -171,42 +54,81 @@
    },
    {
     "airline": "IndiGo",
-    "flight_number": "6E 897",
-    "dep_time": "2026-12-13 12:20",
-    "arr_time": "2026-12-13 14:25",
+    "flight_number": "6E 930",
+    "dep_time": "2026-12-13 03:00",
+    "arr_time": "2026-12-13 05:10",
     "stops": 0,
-    "duration_min": 125,
+    "duration_min": 130,
     "baggage": "not listed",
-    "price": 9539,
+    "price": 9737,
     "currency": "INR",
     "link": "https://www.google.com/travel/flights?hl=en&gl=in&curr=INR&tfs=CBwQAhoeEgoyMDI2LTEyLTEzagcIARIDREVMcgcIARIDQ0NVQAFIAXABmAEC&tfu=EgIIAg",
-    "key": "6E897|2026-12-13 12:20"
+    "key": "6E930|2026-12-13 03:00"
    },
    {
-    "airline": "Air India Express",
-    "flight_number": "IX 1197",
-    "dep_time": "2026-12-13 20:50",
-    "arr_time": "2026-12-13 23:05",
+    "airline": "IndiGo",
+    "flight_number": "6E 340",
+    "dep_time": "2026-12-13 06:15",
+    "arr_time": "2026-12-13 08:25",
     "stops": 0,
-    "duration_min": 135,
+    "duration_min": 130,
     "baggage": "not listed",
-    "price": 9914,
+    "price": 9737,
     "currency": "INR",
     "link": "https://www.google.com/travel/flights?hl=en&gl=in&curr=INR&tfs=CBwQAhoeEgoyMDI2LTEyLTEzagcIARIDREVMcgcIARIDQ0NVQAFIAXABmAEC&tfu=EgIIAg",
-    "key": "IX1197|2026-12-13 20:50"
+    "key": "6E340|2026-12-13 06:15"
    },
    {
-    "airline": "Akasa Air",
-    "flight_number": "QP 1258",
-    "dep_time": "2026-12-13 08:50",
-    "arr_time": "2026-12-13 11:10",
+    "airline": "IndiGo",
+    "flight_number": "6E 2192",
+    "dep_time": "2026-12-13 08:30",
+    "arr_time": "2026-12-13 10:40",
     "stops": 0,
-    "duration_min": 140,
+    "duration_min": 130,
     "baggage": "not listed",
-    "price": 9974,
+    "price": 9737,
     "currency": "INR",
     "link": "https://www.google.com/travel/flights?hl=en&gl=in&curr=INR&tfs=CBwQAhoeEgoyMDI2LTEyLTEzagcIARIDREVMcgcIARIDQ0NVQAFIAXABmAEC&tfu=EgIIAg",
-    "key": "QP1258|2026-12-13 08:50"
+    "key": "6E2192|2026-12-13 08:30"
+   },
+   {
+    "airline": "IndiGo",
+    "flight_number": "6E 389",
+    "dep_time": "2026-12-13 22:15",
+    "arr_time": "2026-12-14 00:25",
+    "stops": 0,
+    "duration_min": 130,
+    "baggage": "not listed",
+    "price": 9737,
+    "currency": "INR",
+    "link": "https://www.google.com/travel/flights?hl=en&gl=in&curr=INR&tfs=CBwQAhoeEgoyMDI2LTEyLTEzagcIARIDREVMcgcIARIDQ0NVQAFIAXABmAEC&tfu=EgIIAg",
+    "key": "6E389|2026-12-13 22:15"
+   },
+   {
+    "airline": "IndiGo",
+    "flight_number": "6E 247",
+    "dep_time": "2026-12-13 23:45",
+    "arr_time": "2026-12-14 01:55",
+    "stops": 0,
+    "duration_min": 130,
+    "baggage": "not listed",
+    "price": 9737,
+    "currency": "INR",
+    "link": "https://www.google.com/travel/flights?hl=en&gl=in&curr=INR&tfs=CBwQAhoeEgoyMDI2LTEyLTEzagcIARIDREVMcgcIARIDQ0NVQAFIAXABmAEC&tfu=EgIIAg",
+    "key": "6E247|2026-12-13 23:45"
+   },
+   {
+    "airline": "IndiGo",
+    "flight_number": "6E 5191",
+    "dep_time": "2026-12-13 04:45",
+    "arr_time": "2026-12-13 06:55",
+    "stops": 0,
+    "duration_min": 130,
+    "baggage": "not listed",
+    "price": 9999,
+    "currency": "INR",
+    "link": "https://www.google.com/travel/flights?hl=en&gl=in&curr=INR&tfs=CBwQAhoeEgoyMDI2LTEyLTEzagcIARIDREVMcgcIARIDQ0NVQAFIAXABmAEC&tfu=EgIIAg",
+    "key": "6E5191|2026-12-13 04:45"
    },
    {
     "airline": "IndiGo",
@@ -216,10 +138,36 @@
     "stops": 0,
     "duration_min": 130,
     "baggage": "not listed",
-    "price": 10537,
+    "price": 9999,
     "currency": "INR",
     "link": "https://www.google.com/travel/flights?hl=en&gl=in&curr=INR&tfs=CBwQAhoeEgoyMDI2LTEyLTEzagcIARIDREVMcgcIARIDQ0NVQAFIAXABmAEC&tfu=EgIIAg",
     "key": "6E2327|2026-12-13 14:00"
+   },
+   {
+    "airline": "IndiGo",
+    "flight_number": "6E 894",
+    "dep_time": "2026-12-13 10:30",
+    "arr_time": "2026-12-13 12:40",
+    "stops": 0,
+    "duration_min": 130,
+    "baggage": "not listed",
+    "price": 10314,
+    "currency": "INR",
+    "link": "https://www.google.com/travel/flights?hl=en&gl=in&curr=INR&tfs=CBwQAhoeEgoyMDI2LTEyLTEzagcIARIDREVMcgcIARIDQ0NVQAFIAXABmAEC&tfu=EgIIAg",
+    "key": "6E894|2026-12-13 10:30"
+   },
+   {
+    "airline": "IndiGo",
+    "flight_number": "6E 897",
+    "dep_time": "2026-12-13 12:20",
+    "arr_time": "2026-12-13 14:25",
+    "stops": 0,
+    "duration_min": 125,
+    "baggage": "not listed",
+    "price": 10314,
+    "currency": "INR",
+    "link": "https://www.google.com/travel/flights?hl=en&gl=in&curr=INR&tfs=CBwQAhoeEgoyMDI2LTEyLTEzagcIARIDREVMcgcIARIDQ0NVQAFIAXABmAEC&tfu=EgIIAg",
+    "key": "6E897|2026-12-13 12:20"
    },
    {
     "airline": "IndiGo",
@@ -229,10 +177,36 @@
     "stops": 0,
     "duration_min": 130,
     "baggage": "not listed",
-    "price": 10537,
+    "price": 10314,
     "currency": "INR",
     "link": "https://www.google.com/travel/flights?hl=en&gl=in&curr=INR&tfs=CBwQAhoeEgoyMDI2LTEyLTEzagcIARIDREVMcgcIARIDQ0NVQAFIAXABmAEC&tfu=EgIIAg",
     "key": "6E6415|2026-12-13 15:30"
+   },
+   {
+    "airline": "Akasa Air",
+    "flight_number": "QP 1258",
+    "dep_time": "2026-12-13 08:50",
+    "arr_time": "2026-12-13 11:10",
+    "stops": 0,
+    "duration_min": 140,
+    "baggage": "not listed",
+    "price": 10473,
+    "currency": "INR",
+    "link": "https://www.google.com/travel/flights?hl=en&gl=in&curr=INR&tfs=CBwQAhoeEgoyMDI2LTEyLTEzagcIARIDREVMcgcIARIDQ0NVQAFIAXABmAEC&tfu=EgIIAg",
+    "key": "QP1258|2026-12-13 08:50"
+   },
+   {
+    "airline": "Akasa Air",
+    "flight_number": "QP 1260",
+    "dep_time": "2026-12-13 20:55",
+    "arr_time": "2026-12-13 23:25",
+    "stops": 0,
+    "duration_min": 150,
+    "baggage": "not listed",
+    "price": 10473,
+    "currency": "INR",
+    "link": "https://www.google.com/travel/flights?hl=en&gl=in&curr=INR&tfs=CBwQAhoeEgoyMDI2LTEyLTEzagcIARIDREVMcgcIARIDQ0NVQAFIAXABmAEC&tfu=EgIIAg",
+    "key": "QP1260|2026-12-13 20:55"
    },
    {
     "airline": "IndiGo",
@@ -242,7 +216,7 @@
     "stops": 0,
     "duration_min": 130,
     "baggage": "not listed",
-    "price": 10537,
+    "price": 11312,
     "currency": "INR",
     "link": "https://www.google.com/travel/flights?hl=en&gl=in&curr=INR&tfs=CBwQAhoeEgoyMDI2LTEyLTEzagcIARIDREVMcgcIARIDQ0NVQAFIAXABmAEC&tfu=EgIIAg",
     "key": "6E6517|2026-12-13 19:30"
@@ -285,19 +259,6 @@
     "currency": "INR",
     "link": "https://www.google.com/travel/flights?hl=en&gl=in&curr=INR&tfs=CBwQAhoeEgoyMDI2LTEyLTEzagcIARIDREVMcgcIARIDQ0NVQAFIAXABmAEC&tfu=EgIIAg",
     "key": "AI2709|2026-12-13 19:40"
-   },
-   {
-    "airline": "IndiGo",
-    "flight_number": "6E 920",
-    "dep_time": "2026-12-13 17:15",
-    "arr_time": "2026-12-13 19:35",
-    "stops": 0,
-    "duration_min": 140,
-    "baggage": "not listed",
-    "price": 13477,
-    "currency": "INR",
-    "link": "https://www.google.com/travel/flights?hl=en&gl=in&curr=INR&tfs=CBwQAhoeEgoyMDI2LTEyLTEzagcIARIDREVMcgcIARIDQ0NVQAFIAXABmAEC&tfu=EgIIAg",
-    "key": "6E920|2026-12-13 17:15"
    },
    {
     "airline": "Air India",
@@ -368,8 +329,8 @@
  },
  "stats": {
   "lowest": 8903,
-  "highest": 9503,
-  "observations": 39
+  "highest": 9522,
+  "observations": 40
  },
  "series": [
   {
@@ -527,22 +488,33 @@
   {
    "t": "2026-10-29T00:59:47+00:00",
    "p": 8962
+  },
+  {
+   "t": "2026-10-29T10:01:17+00:00",
+   "p": 9522
   }
  ],
  "last_run": {
-  "at": "2026-10-29T00:59:47+00:00",
+  "at": "2026-10-29T10:01:17+00:00",
   "status": "ok",
   "message": "",
-  "n_flights": 25,
-  "cheapest": 8962
+  "n_flights": 22,
+  "cheapest": 9522
  },
- "last_success": "2026-10-29T00:59:47+00:00",
- "next_check_approx": "2026-10-29T03:59:47+00:00",
+ "last_success": "2026-10-29T10:01:17+00:00",
+ "next_check_approx": "2026-10-29T13:01:17+00:00",
  "quota": {
-  "used": 39,
+  "used": 40,
   "cap": 240
  },
  "runs": [
+  {
+   "at": "2026-10-29T10:01:17+00:00",
+   "status": "ok",
+   "message": "",
+   "n_flights": 22,
+   "cheapest": 9522
+  },
   {
    "at": "2026-10-29T00:59:47+00:00",
    "status": "ok",
