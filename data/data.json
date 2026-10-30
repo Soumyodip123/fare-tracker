@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-30T10:04:20+00:00",
+ "generated_at": "2026-10-30T18:02:05+00:00",
  "repo": "Soumyodip123/fare-tracker",
  "route": {
   "origin": "DEL",
@@ -35,9 +35,9 @@
   "type": "live search"
  },
  "latest": {
-  "at": "2026-10-30T10:04:17+00:00",
-  "cheapest": 9055,
-  "previous": 9302,
+  "at": "2026-10-30T18:01:56+00:00",
+  "cheapest": 9302,
+  "previous": 9055,
   "flights": [
    {
     "airline": "Air India Express",
@@ -47,7 +47,7 @@
     "stops": 1,
     "duration_min": 275,
     "baggage": "not listed",
-    "price": 9055,
+    "price": 9302,
     "currency": "INR",
     "link": "https://www.google.com/travel/flights?hl=en&gl=in&curr=INR&tfs=CBwQAhoeEgoyMDI2LTEyLTEzagcIARIDREVMcgcIARIDQ0NVQAFIAXABmAEC&tfu=EgIIAg",
     "key": "IX1067+IX1259|2026-12-13 11:25"
@@ -369,7 +369,7 @@
  "stats": {
   "lowest": 8903,
   "highest": 9522,
-  "observations": 43
+  "observations": 44
  },
  "series": [
   {
@@ -543,22 +543,33 @@
   {
    "t": "2026-10-30T10:04:17+00:00",
    "p": 9055
+  },
+  {
+   "t": "2026-10-30T18:01:56+00:00",
+   "p": 9302
   }
  ],
  "last_run": {
-  "at": "2026-10-30T10:04:17+00:00",
+  "at": "2026-10-30T18:01:56+00:00",
   "status": "ok",
   "message": "",
   "n_flights": 25,
-  "cheapest": 9055
+  "cheapest": 9302
  },
- "last_success": "2026-10-30T10:04:17+00:00",
- "next_check_approx": "2026-10-30T13:04:17+00:00",
+ "last_success": "2026-10-30T18:01:56+00:00",
+ "next_check_approx": "2026-10-30T21:01:56+00:00",
  "quota": {
-  "used": 43,
+  "used": 44,
   "cap": 240
  },
  "runs": [
+  {
+   "at": "2026-10-30T18:01:56+00:00",
+   "status": "ok",
+   "message": "",
+   "n_flights": 25,
+   "cheapest": 9302
+  },
   {
    "at": "2026-10-30T10:04:17+00:00",
    "status": "ok",
