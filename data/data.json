@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-30T22:23:08+00:00",
+ "generated_at": "2026-10-31T05:46:31+00:00",
  "repo": "Soumyodip123/fare-tracker",
  "route": {
   "origin": "DEL",
@@ -35,9 +35,9 @@
   "type": "live search"
  },
  "latest": {
-  "at": "2026-10-30T22:23:07+00:00",
+  "at": "2026-10-31T05:46:30+00:00",
   "cheapest": 9522,
-  "previous": 9302,
+  "previous": 9522,
   "flights": [
    {
     "airline": "SpiceJet",
@@ -330,7 +330,7 @@
  "stats": {
   "lowest": 8903,
   "highest": 9522,
-  "observations": 45
+  "observations": 46
  },
  "series": [
   {
@@ -512,22 +512,33 @@
   {
    "t": "2026-10-30T22:23:07+00:00",
    "p": 9522
+  },
+  {
+   "t": "2026-10-31T05:46:30+00:00",
+   "p": 9522
   }
  ],
  "last_run": {
-  "at": "2026-10-30T22:23:07+00:00",
+  "at": "2026-10-31T05:46:30+00:00",
   "status": "ok",
   "message": "",
   "n_flights": 22,
   "cheapest": 9522
  },
- "last_success": "2026-10-30T22:23:07+00:00",
- "next_check_approx": "2026-10-31T01:23:07+00:00",
+ "last_success": "2026-10-31T05:46:30+00:00",
+ "next_check_approx": "2026-10-31T08:46:30+00:00",
  "quota": {
-  "used": 45,
+  "used": 46,
   "cap": 240
  },
  "runs": [
+  {
+   "at": "2026-10-31T05:46:30+00:00",
+   "status": "ok",
+   "message": "",
+   "n_flights": 22,
+   "cheapest": 9522
+  },
   {
    "at": "2026-10-30T22:23:07+00:00",
    "status": "ok",
