@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-12T11:17:13+00:00",
+ "generated_at": "2026-11-12T19:56:25+00:00",
  "repo": "Soumyodip123/fare-tracker",
  "route": {
   "origin": "DEL",
@@ -35,7 +35,7 @@
   "type": "live search"
  },
  "latest": {
-  "at": "2026-11-12T11:17:11+00:00",
+  "at": "2026-11-12T19:56:23+00:00",
   "cheapest": 9688,
   "previous": 9688,
   "flights": [
@@ -190,7 +190,7 @@
     "stops": 0,
     "duration_min": 135,
     "baggage": "not listed",
-    "price": 10169,
+    "price": 10222,
     "currency": "INR",
     "link": "https://www.google.com/travel/flights?hl=en&gl=in&curr=INR&tfs=CBwQAhoeEgoyMDI2LTEyLTEzagcIARIDREVMcgcIARIDQ0NVQAFIAXABmAEC&tfu=EgIIAg",
     "key": "IX1197|2026-12-13 20:50"
@@ -275,19 +275,6 @@
    },
    {
     "airline": "Air India",
-    "flight_number": "AI 2553",
-    "dep_time": "2026-12-13 16:15",
-    "arr_time": "2026-12-13 18:25",
-    "stops": 0,
-    "duration_min": 130,
-    "baggage": "not listed",
-    "price": 10327,
-    "currency": "INR",
-    "link": "https://www.google.com/travel/flights?hl=en&gl=in&curr=INR&tfs=CBwQAhoeEgoyMDI2LTEyLTEzagcIARIDREVMcgcIARIDQ0NVQAFIAXABmAEC&tfu=EgIIAg",
-    "key": "AI2553|2026-12-13 16:15"
-   },
-   {
-    "airline": "Air India",
     "flight_number": "AI 2705",
     "dep_time": "2026-12-13 06:55",
     "arr_time": "2026-12-13 09:10",
@@ -298,6 +285,19 @@
     "currency": "INR",
     "link": "https://www.google.com/travel/flights?hl=en&gl=in&curr=INR&tfs=CBwQAhoeEgoyMDI2LTEyLTEzagcIARIDREVMcgcIARIDQ0NVQAFIAXABmAEC&tfu=EgIIAg",
     "key": "AI2705|2026-12-13 06:55"
+   },
+   {
+    "airline": "Air India",
+    "flight_number": "AI 2553",
+    "dep_time": "2026-12-13 16:15",
+    "arr_time": "2026-12-13 18:25",
+    "stops": 0,
+    "duration_min": 130,
+    "baggage": "not listed",
+    "price": 10642,
+    "currency": "INR",
+    "link": "https://www.google.com/travel/flights?hl=en&gl=in&curr=INR&tfs=CBwQAhoeEgoyMDI2LTEyLTEzagcIARIDREVMcgcIARIDQ0NVQAFIAXABmAEC&tfu=EgIIAg",
+    "key": "AI2553|2026-12-13 16:15"
    },
    {
     "airline": "IndiGo",
@@ -369,7 +369,7 @@
  "stats": {
   "lowest": 8903,
   "highest": 9737,
-  "observations": 83
+  "observations": 84
  },
  "series": [
   {
@@ -703,22 +703,33 @@
   {
    "t": "2026-11-12T11:17:11+00:00",
    "p": 9688
+  },
+  {
+   "t": "2026-11-12T19:56:23+00:00",
+   "p": 9688
   }
  ],
  "last_run": {
-  "at": "2026-11-12T11:17:11+00:00",
+  "at": "2026-11-12T19:56:23+00:00",
   "status": "ok",
   "message": "",
   "n_flights": 25,
   "cheapest": 9688
  },
- "last_success": "2026-11-12T11:17:11+00:00",
- "next_check_approx": "2026-11-12T14:17:11+00:00",
+ "last_success": "2026-11-12T19:56:23+00:00",
+ "next_check_approx": "2026-11-12T22:56:23+00:00",
  "quota": {
-  "used": 35,
+  "used": 36,
   "cap": 240
  },
  "runs": [
+  {
+   "at": "2026-11-12T19:56:23+00:00",
+   "status": "ok",
+   "message": "",
+   "n_flights": 25,
+   "cheapest": 9688
+  },
   {
    "at": "2026-11-12T11:17:11+00:00",
    "status": "ok",
@@ -1127,13 +1138,6 @@
   },
   {
    "at": "2026-10-25T11:34:08+00:00",
-   "status": "ok",
-   "message": "",
-   "n_flights": 24,
-   "cheapest": 8962
-  },
-  {
-   "at": "2026-10-25T06:17:57+00:00",
    "status": "ok",
    "message": "",
    "n_flights": 24,
